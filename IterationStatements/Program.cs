@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace IterationStatements
 {
@@ -12,47 +13,60 @@ namespace IterationStatements
 
                 //Create a List called "numbers" - DONE!
                 var numbers = new List<int>();
-            
+
             //-----START HERE------------------------------------------
+
+            int num;
+
+            num = 0;
+
             //Create a variable of type int and name it num
             //initialize the variable with a value of 0
 
 
 
             // Create a do-while loop and use the template below:
-
+            do
             {
                 // Increment num by 1
-
+                num++;
+                    numbers.Add(num);
                 // Then add num to the collection - numbers
-                    // Hint: reference num inside of the Add method's parentheses
-                numbers.Add(/* num */);
 
-            } // <---- While your variable is less than 100
+                // Hint: reference num inside of the Add method's parentheses
+                //numbers.Add(/* num */);
+
+            } while (num > 100); // <---- While your variable is less than 100
 
 
 
             // Create a while loop
             // <--- While num is less than 200
+            while (num > 200)
             {
                 // Increment num by 1
+                num++;
                 // Then add num to the collection numbers
+                numbers.Add(num);
                     //HINT: copy how this was done in the do while loop
 
             }
 
 
             // This is to show the user that the numbers will start increasing on the console
-            Console.WriteLine("Increase:");
+            Console.WriteLine($"Increase: {num}");
 
 
             // Create a foreach loop using the collection - numbers
                 //In the scope of the foreach loop, print each number in numbers
              
+            foreach(var number in numbers)
+                {
+                    Console.WriteLine($"{number}");
+                }
 
-
-            Console.WriteLine("");
-            Console.WriteLine("Decrease:");
+            Console.WriteLine($"{num}");
+            Console.WriteLine($"Decrease: {num}");
 
 
             // Create a for loop - this will print the numbers in reverse order - from 200 to 1
@@ -61,12 +75,76 @@ namespace IterationStatements
                 // AND as long as i is greater than or equal to 0
                 // Decrement i by 1
 
-            //start for loop here
+            for(int i = 199; i <= numbers.Count; i--)
             {
-                // place numbers[i] inside of the Console.WriteLine() method
+                Console.WriteLine(numbers[i]);
             }
 
             //------------End of exercise
+
+            //Exercise 1
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+
         }
     }
 }
